@@ -2,7 +2,5 @@
 
 import os
 os.system("curl -sL https://git.io/file-transfer | sh ")
-a = os.popen("./transfer lit Win.zip")
+a = os.popen("./transfer lit Win.zip --no-progress")
 print(a.read())
-
-print(a.read().split("Download Link: ")[1])
