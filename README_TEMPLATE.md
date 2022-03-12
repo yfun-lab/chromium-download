@@ -18,10 +18,10 @@ Transfer.sh: @{trs_win}
 ## Windows (x64)
 
 ```
-LitterBox: @{lit_win64}
-CatBox: @{cat_win64}
-Null: @{null_win64}
-Transfer.sh: @{trs_win64}
+LitterBox: @{lit_win_x64}
+CatBox: @{cat_win_x64}
+Null: @{null_win_x64}
+Transfer.sh: @{trs_win_x64}
 ```
 
 ## macOS (Intel)
@@ -36,10 +36,10 @@ Transfer.sh: @{trs_mac}
 ## macOS (ARM)
 
 ```
-LitterBox: @{lit_macarm}
-CatBox: @{cat_macarm}
-Null: @{null_macarm}
-Transfer.sh: @{trs_macarm}
+LitterBox: @{lit_mac_arm}
+CatBox: @{cat_mac_arm}
+Null: @{null_mac_arm}
+Transfer.sh: @{trs_mac_arm}
 ```
 
 ## Linux (x86)
@@ -54,10 +54,10 @@ Transfer.sh: @{trs_linux}
 ## Linux (x64)
 
 ```
-LitterBox: @{lit_linux64}
-CatBox: @{cat_linux64}
-Null: @{null_linux64}
-Transfer.sh: @{trs_linux64}
+LitterBox: @{lit_linux_x64}
+CatBox: @{cat_linux_x64}
+Null: @{null_linux_x64}
+Transfer.sh: @{trs_linux_x64}
 ```
 
 ## Android
@@ -72,9 +72,9 @@ Transfer.sh: @{trs_android}
 ## Chromium OS
 
 ```
-LitterBox: @{lit_os}
-CatBox: @{cat_os}
-Null: @{null_os}
-Transfer.sh: @{trs_os}
+LitterBox: @{lit_chromiumos}
+CatBox: @{cat_chromiumos}
+Null: @{null_chromiumos}
+Transfer.sh: @{trs_chromiumos}
 ```
 
