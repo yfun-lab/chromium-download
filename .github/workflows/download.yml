@@ -42,7 +42,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3.0.0
   
-      - name: Push to NPM
+      - name: Push
         run: |
           date +"%Y-%m-%d %H:%M:%S" > update.txt
           git config --global user.email "icolabot@e.yfun.top"
@@ -54,5 +54,8 @@ jobs:
           #npm version patch
           #npm publish
           python upload.py
+          git add .
+          git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
+          git push origin main
         #env:
          # NODE_AUTH_TOKEN: ${{secrets.npm_token}}
