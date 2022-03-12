@@ -1,6 +1,0 @@
-{
-  "name": "chromium-download-ocoke",
-  "version": "0.0.0",
-  "description": "定时自动获取 Chromium 可执行程序。",
-  "author": "YFun(@oCoke)"
-}
