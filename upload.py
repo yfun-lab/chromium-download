@@ -55,8 +55,6 @@ with open('./README_TEMPLATE.md', 'r') as f:
         markdown.replace("@{lit_"+k+"}", v)
     for k, v in cat.items():
         markdown.replace("@{cat_"+k+"}", v)
-    for k, v in null.items():
-        markdown.replace("@{null_"+k+"}", "<ERROR>")
     for k, v in trs.items():
         markdown.replace("@{trs_"+k+"}", v)
 
