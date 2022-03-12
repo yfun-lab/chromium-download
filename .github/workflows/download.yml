@@ -42,8 +42,8 @@ jobs:
       - name: Push to NPM
         run: |
           date +"%Y-%m-%d %H:%M:%S" > update.txt
-          #git config --global user.email "icolabot@e.yfun.top"
-          #git config --global user.name "iColaBot"
+          git config --global user.email "icolabot@e.yfun.top"
+          git config --global user.name "iColaBot"
           #git add .
           #git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
           #git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
