@@ -27,15 +27,15 @@ cat["chromiumos"] = os.popen("./transfer cat Linux_ChromiumOS_Full.zip --no-prog
 cat["android"] = os.popen("./transfer cat Android.zip --no-progress").read()
 
 # Null
-null = {}
-null["win"] = os.popen("./transfer null Win.zip --no-progress").read()
-null["win_x64"] = os.popen("./transfer null Win_x64.zip --no-progress").read()
-null["mac"] = os.popen("./transfer null Mac.zip --no-progress").read()
-null["mac_arm"] = os.popen("./transfer null Mac_Arm.zip --no-progress").read()
-null["linux"] = os.popen("./transfer null Linux.zip --no-progress").read()
-null["linux_x64"] = os.popen("./transfer null Linux_x64.zip --no-progress").read()
-null["chromiumos"] = os.popen("./transfer null Linux_ChromiumOS_Full.zip --no-progress").read()
-null["android"] = os.popen("./transfer null Android.zip --no-progress").read()
+# null = {}
+# null["win"] = os.popen("./transfer null Win.zip --no-progress").read()
+# null["win_x64"] = os.popen("./transfer null Win_x64.zip --no-progress").read()
+# null["mac"] = os.popen("./transfer null Mac.zip --no-progress").read()
+# null["mac_arm"] = os.popen("./transfer null Mac_Arm.zip --no-progress").read()
+# null["linux"] = os.popen("./transfer null Linux.zip --no-progress").read()
+# null["linux_x64"] = os.popen("./transfer null Linux_x64.zip --no-progress").read()
+# null["chromiumos"] = os.popen("./transfer null Linux_ChromiumOS_Full.zip --no-progress").read()
+# null["android"] = os.popen("./transfer null Android.zip --no-progress").read()
 
 # Transfer.sh
 
@@ -56,7 +56,7 @@ with open('./README_TEMPLATE.md', 'r') as f:
     for k, v in cat.items():
         markdown.replace("@{cat_"+k+"}", v)
     for k, v in null.items():
-        markdown.replace("@{null_"+k+"}", v)
+        markdown.replace("@{null_"+k+"}", "<ERROR>")
     for k, v in trs.items():
         markdown.replace("@{trs_"+k+"}", v)
 
