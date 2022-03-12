@@ -33,14 +33,14 @@ jobs:
           rm -r chromium/
           mkdir chromium
           cd chromium
-          wget https://download-chromium.appspot.com/dl/Win?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Win_x64?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Mac?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Linux?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Linux_ChromiumOS_Full?type=snapshots -T 20
-          wget https://download-chromium.appspot.com/dl/Android?type=snapshots -T 20
+          wget https://download-chromium.appspot.com/dl/Win?type=snapshots -T 20 -O Win.zip
+          wget https://download-chromium.appspot.com/dl/Win_x64?type=snapshots -T 20 -O Win_x64.zip
+          wget https://download-chromium.appspot.com/dl/Mac?type=snapshots -T 20 -O Mac.zip
+          wget https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots -T 20 -O Mac_Arm.zip
+          wget https://download-chromium.appspot.com/dl/Linux?type=snapshots -T 20 -O Linux.zip
+          wget https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots -T 20 -O Linux_x64.zip
+          wget https://download-chromium.appspot.com/dl/Linux_ChromiumOS_Full?type=snapshots -T 20 -O Linux_ChromiumOS_Full.zip
+          wget https://download-chromium.appspot.com/dl/Android?type=snapshots -T 20 -O Android.zip
 
       - name: Push to GitHub
         run: |
@@ -49,4 +49,4 @@ jobs:
           git config --global user.name "iColaBot"
           git add .
           git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
-          git push origin main
+          git push origin main -f 
