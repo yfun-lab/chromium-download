@@ -53,6 +53,6 @@ jobs:
           #git push origin main
           #npm version patch
           #npm publish
-          python main.py
+          python upload.py
         #env:
          # NODE_AUTH_TOKEN: ${{secrets.npm_token}}
