@@ -31,7 +31,8 @@ jobs:
       - name: Download Chromium
         run: |
           rm -r chromium/
-          mkdir chromium && cd chromium
+          mkdir chromium
+          cd chromium
           wget https://download-chromium.appspot.com/dl/Win?type=snapshots -T 20
           wget https://download-chromium.appspot.com/dl/Win_x64?type=snapshots -T 20
           wget https://download-chromium.appspot.com/dl/Mac?type=snapshots -T 20
@@ -43,7 +44,6 @@ jobs:
 
       - name: Push to GitHub
         run: |
-          cd ..
           date +"%Y-%m-%d %H:%M:%S" > update.txt
           git config --global user.email "icolabot@e.yfun.top"
           git config --global user.name "iColaBot"
