@@ -39,6 +39,9 @@ jobs:
           wget https://download-chromium.appspot.com/dl/Linux_ChromiumOS_Full?type=snapshots -T 20 -O Linux_ChromiumOS_Full.zip
           wget https://download-chromium.appspot.com/dl/Android?type=snapshots -T 20 -O Android.zip
 
+      - name: Setup Python
+        uses: actions/setup-python@v3.0.0
+  
       - name: Push to NPM
         run: |
           date +"%Y-%m-%d %H:%M:%S" > update.txt
@@ -48,7 +51,8 @@ jobs:
           #git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
           #git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           #git push origin main
-          npm version patch
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          #npm version patch
+          #npm publish
+          python main.py
+        #env:
+         # NODE_AUTH_TOKEN: ${{secrets.npm_token}}
