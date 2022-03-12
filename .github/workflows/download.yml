@@ -49,4 +49,5 @@ jobs:
           git config --global user.name "iColaBot"
           git add .
           git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
-          git push origin main -f 
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin main
