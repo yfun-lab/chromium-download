@@ -30,9 +30,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Download Chromium
         run: |
-          rm -r chromium/
-          mkdir chromium
-          cd chromium
           wget https://download-chromium.appspot.com/dl/Win?type=snapshots -T 20 -O Win.zip
           wget https://download-chromium.appspot.com/dl/Win_x64?type=snapshots -T 20 -O Win_x64.zip
           wget https://download-chromium.appspot.com/dl/Mac?type=snapshots -T 20 -O Mac.zip
@@ -42,12 +39,16 @@ jobs:
           wget https://download-chromium.appspot.com/dl/Linux_ChromiumOS_Full?type=snapshots -T 20 -O Linux_ChromiumOS_Full.zip
           wget https://download-chromium.appspot.com/dl/Android?type=snapshots -T 20 -O Android.zip
 
-      - name: Push to GitHub
+      - name: Push to NPM
         run: |
           date +"%Y-%m-%d %H:%M:%S" > update.txt
-          git config --global user.email "icolabot@e.yfun.top"
-          git config --global user.name "iColaBot"
-          git add .
-          git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push origin main
+          #git config --global user.email "icolabot@e.yfun.top"
+          #git config --global user.name "iColaBot"
+          #git add .
+          #git commit -m $(date +"%Y-%m-%d_%H:%M:%S")
+          #git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          #git push origin main
+          npm version patch
+          npm public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
