@@ -1,7 +1,7 @@
 # Upload File
 import os
 # Install Transfer
-os.system("curl -sL https://git.io/file-transfer | sh ")
+# os.system("curl -sL https://git.io/file-transfer | sh ")
 
 # LitterBox
 # lit = {}
