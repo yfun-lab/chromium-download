@@ -40,15 +40,16 @@ import os
 # Transfer.sh
 
 trs = {}
-trs["win"] = os.popen("./transfer trs Win.zip --no-progress").read()
-trs["win_x64"] = os.popen("./transfer trs Win_x64.zip --no-progress").read()
-trs["mac"] = os.popen("./transfer trs Mac.zip --no-progress").read()
-trs["mac_arm"] = os.popen("./transfer trs Mac_Arm.zip --no-progress").read()
-trs["linux"] = os.popen("./transfer trs Linux.zip --no-progress").read()
-trs["linux_x64"] = os.popen("./transfer trs Linux_x64.zip --no-progress").read()
-trs["chromiumos"] = os.popen("./transfer trs Linux_ChromiumOS_Full.zip --no-progress").read()
-trs["android"] = os.popen("./transfer trs Android.zip --no-progress").read()
+trs["win"] = os.popen("curl --upload-file ./Win.zip https://transfer.sh/Win.zip").read()
+trs["win_x64"] = os.popen("curl --upload-file ./Win_x64.zip https://transfer.sh/Win_x64.zip").read()
+trs["mac"] = os.popen("curl --upload-file ./Mac.zip https://transfer.sh/Mac.zip").read()
+trs["mac_arm"] = os.popen("curl --upload-file ./Mac_Arm.zip https://transfer.sh/Mac_Arm.zip").read()
+trs["linux"] = os.popen("curl --upload-file ./Linux.zip https://transfer.sh/Linux.zip").read()
+trs["linux_x64"] = os.popen("curl --upload-file ./Linux_x64.zip https://transfer.sh/Linux_x64.zip").read()
+trs["chromiumos"] = os.popen("curl --upload-file ./Linux_ChromiumOS_Full.zip https://transfer.sh/Linux_ChromiumOS_Full.zip").read()
+trs["android"] = os.popen("curl --upload-file ./Android.zip https://transfer.sh/Android.zip").read()
 
+print(trs)
 with open('./README_TEMPLATE.md', 'r') as f:
     markdown = f.read()
 #     for k, v in lit.items():
