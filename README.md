@@ -8,7 +8,7 @@
 
 ## 下载链接
 
-> 此处链接的文件最后更新于 UTC 时间 {lastUpdate}。
+> 此处链接的文件最后更新于 UTC 时间 @{lastUpdate}。
 
 - [Windows (x86)](https://transfer.sh/5PmiY3uKzy/Win.zip)
 - [Windows (x64)](https://transfer.sh/g9dU0sgtwG/Win_x64.zip)
