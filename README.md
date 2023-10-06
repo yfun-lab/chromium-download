@@ -1,4 +1,4 @@
-# 下载 Chromium 浏览器
+# 获取 Chromium 浏览器
 
 > 每 8 小时从官方更新 Chromium 浏览器，自 2022 年 3 月 13 日开始。
 > 
@@ -6,75 +6,25 @@
 >
 > 在下方寻找适合您的版本进行下载。
 
-## Windows (x86)
+## 下载链接
 
-```
-LitterBox: @{lit_win}
-CatBox: @{cat_win}
-Null: @{null_win}
-Transfer.sh: https://transfer.sh/WqA5ed3CWD/Win.zip
-```
+> 此处链接的文件最后更新于 UTC 时间 {lastUpdate}。
 
-## Windows (x64)
+- [Windows (x86)](https://transfer.sh/irCK15Lgu8/Win.zip)
+- [Windows (x64)](https://transfer.sh/n6kpvaHlB8/Win_x64.zip)
+- [macOS (Intel)](https://transfer.sh/H1IGrexLqi/Mac.zip)
+- [macOS (ARM)](https://transfer.sh/J7q9k8MPuY/Mac_Arm.zip)
+- [Linux (x86)](https://transfer.sh/p0OoMbwpCN/Linux.zip)
+- [Linux (x64)](https://transfer.sh/gHtlLiiGdV/Linux_x64.zip)
+- [Android](https://transfer.sh/xDtc0FCBwh/Android.zip)
+- [Chromium OS](https://transfer.sh/6TxgxMV50D/Linux_ChromiumOS_Full.zip)
 
-```
-LitterBox: @{lit_win_x64}
-CatBox: @{cat_win_x64}
-Null: @{null_win_x64}
-Transfer.sh: https://transfer.sh/R9Yo1X4ueA/Win_x64.zip
-```
+## 索引文件
 
-## macOS (Intel)
+请查看项目根目录下的 `download.json` 文件。
 
-```
-LitterBox: @{lit_mac}
-CatBox: @{cat_mac}
-Null: @{null_mac}
-Transfer.sh: https://transfer.sh/M5gsu0bBrk/Mac.zip
-```
+## 免责声明
 
-## macOS (ARM)
+我们从官网中指出的方法，通过脚本自动下载并上传至 Transfer.sh 提供下载。
 
-```
-LitterBox: @{lit_mac_arm}
-CatBox: @{cat_mac_arm}
-Null: @{null_mac_arm}
-Transfer.sh: https://transfer.sh/ovcmXBf8wf/Mac_Arm.zip
-```
-
-## Linux (x86)
-
-```
-LitterBox: @{lit_linux}
-CatBox: @{cat_linux}
-Null: @{null_linux}
-Transfer.sh: https://transfer.sh/fhVro78A5q/Linux.zip
-```
-
-## Linux (x64)
-
-```
-LitterBox: @{lit_linux_x64}
-CatBox: @{cat_linux_x64}
-Null: @{null_linux_x64}
-Transfer.sh: https://transfer.sh/paM73Jz5bC/Linux_x64.zip
-```
-
-## Android
-
-```
-LitterBox: @{lit_android}
-CatBox: @{cat_android}
-Null: @{null_android}
-Transfer.sh: https://transfer.sh/XAVM3sHqnj/Android.zip
-```
-
-## Chromium OS
-
-```
-LitterBox: @{lit_chromiumos}
-CatBox: @{cat_chromiumos}
-Null: @{null_chromiumos}
-Transfer.sh: https://transfer.sh/LT3lHESOzP/Linux_ChromiumOS_Full.zip
-```
-
+我们使用 CI (GitHub Action) 进行同步，但 `@ocoke`, `yfun-lab`, 以及 `Transfer.sh` 不对文件内容进行保证，请自行对其分辨。
