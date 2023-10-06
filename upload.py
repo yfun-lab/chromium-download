@@ -1,5 +1,5 @@
 # Upload File
-import os
+import os, json
 # Install Transfer
 # os.system("curl -sL https://git.io/file-transfer | sh ")
 
@@ -57,7 +57,10 @@ with open('./README_TEMPLATE.md', 'r') as f:
 #     for k, v in cat.items():
 #         markdown.replace("@{cat_"+k+"}", v)
     for k, v in trs.items():
-        markdown.replace("@{trs_"+k+"}", v)
+        markdown = markdown.replace("@{trs_"+k+"}", v)
 
 with open('./README.md', 'w') as f:
     f.write(markdown)
+
+with open('./download.json', 'w') as f:
+    f.write(json.dumps(trs))
