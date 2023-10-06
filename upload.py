@@ -50,6 +50,10 @@ trs["chromiumos"] = os.popen("curl --upload-file ./Linux_ChromiumOS_Full.zip htt
 trs["android"] = os.popen("curl --upload-file ./Android.zip https://transfer.sh/Android.zip").read()
 
 print(trs)
+
+with open('./update.txt', 'r') as f:
+    timeUpdate = f.read()
+
 with open('./README_TEMPLATE.md', 'r') as f:
     markdown = f.read()
 #     for k, v in lit.items():
@@ -58,6 +62,8 @@ with open('./README_TEMPLATE.md', 'r') as f:
 #         markdown.replace("@{cat_"+k+"}", v)
     for k, v in trs.items():
         markdown = markdown.replace("@{trs_"+k+"}", v)
+
+    markdown = markdown.replace("@{lastUpdate}", timeUpdate)
 
 with open('./README.md', 'w') as f:
     f.write(markdown)
