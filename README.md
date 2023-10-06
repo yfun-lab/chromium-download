@@ -10,14 +10,14 @@
 
 > 此处链接的文件最后更新于 UTC 时间 {lastUpdate}。
 
-- [Windows (x86)](https://transfer.sh/irCK15Lgu8/Win.zip)
-- [Windows (x64)](https://transfer.sh/n6kpvaHlB8/Win_x64.zip)
-- [macOS (Intel)](https://transfer.sh/H1IGrexLqi/Mac.zip)
-- [macOS (ARM)](https://transfer.sh/J7q9k8MPuY/Mac_Arm.zip)
-- [Linux (x86)](https://transfer.sh/p0OoMbwpCN/Linux.zip)
-- [Linux (x64)](https://transfer.sh/gHtlLiiGdV/Linux_x64.zip)
-- [Android](https://transfer.sh/xDtc0FCBwh/Android.zip)
-- [Chromium OS](https://transfer.sh/6TxgxMV50D/Linux_ChromiumOS_Full.zip)
+- [Windows (x86)](https://transfer.sh/5PmiY3uKzy/Win.zip)
+- [Windows (x64)](https://transfer.sh/g9dU0sgtwG/Win_x64.zip)
+- [macOS (Intel)](https://transfer.sh/e3uEIrNpno/Mac.zip)
+- [macOS (ARM)](https://transfer.sh/3KCvaL9P2U/Mac_Arm.zip)
+- [Linux (x86)](https://transfer.sh/YDBNDiltj2/Linux.zip)
+- [Linux (x64)](https://transfer.sh/EcwcTp1yRT/Linux_x64.zip)
+- [Android](https://transfer.sh/h8qim66CTD/Android.zip)
+- [Chromium OS](https://transfer.sh/VIWdmxd8Ys/Linux_ChromiumOS_Full.zip)
 
 ## 索引文件
 
