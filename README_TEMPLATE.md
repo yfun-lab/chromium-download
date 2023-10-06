@@ -8,7 +8,7 @@
 
 ## 下载链接
 
-> 此处链接的文件最后更新于 UTC 时间 {lastUpdate}。
+> 此处链接的文件最后更新于 UTC 时间 @{lastUpdate}。
 
 - [Windows (x86)](@{trs_win})
 - [Windows (x64)](@{trs_win_x64})
