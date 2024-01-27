@@ -8,17 +8,17 @@
 
 ## 下载链接
 
-> 此处链接的文件最后更新于 UTC 时间 2024-01-26 16:17:58
+> 此处链接的文件最后更新于 UTC 时间 2024-01-27 01:02:15
 。
 
-- [Windows (x86)](https://transfer.sh/xgeUouXIGu/Win.zip)
-- [Windows (x64)](https://transfer.sh/dq2LhamPQX/Win_x64.zip)
-- [macOS (Intel)](https://transfer.sh/1nWYT8kH9b/Mac.zip)
-- [macOS (ARM)](https://transfer.sh/zSlfxqJVUT/Mac_Arm.zip)
-- [Linux (x86)](https://transfer.sh/8W0JFcl7Q0/Linux.zip)
-- [Linux (x64)](https://transfer.sh/R31De5L7h9/Linux_x64.zip)
-- [Android](https://transfer.sh/y7Mym7pERQ/Android.zip)
-- [Chromium OS](https://transfer.sh/z5McWVA0je/Linux_ChromiumOS_Full.zip)
+- [Windows (x86)](https://transfer.sh/vU19o9SuyA/Win.zip)
+- [Windows (x64)](https://transfer.sh/0er8GJpppe/Win_x64.zip)
+- [macOS (Intel)](https://transfer.sh/Y5i3Xo6R8t/Mac.zip)
+- [macOS (ARM)](https://transfer.sh/5Y9vlrcWlA/Mac_Arm.zip)
+- [Linux (x86)](https://transfer.sh/AWLdd6zawa/Linux.zip)
+- [Linux (x64)](https://transfer.sh/Qvibjli0hP/Linux_x64.zip)
+- [Android](https://transfer.sh/PStMFfIKAf/Android.zip)
+- [Chromium OS](https://transfer.sh/HxTTugHXz1/Linux_ChromiumOS_Full.zip)
 
 ## 索引文件
 
